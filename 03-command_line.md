@@ -34,7 +34,14 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 'ls', lists directory contents
+'ls -a', includes directory contents that start with a dot (.).
+'ls -l', List in long format (ie, lots of detail)
+'ls -lh' List in long format, with shortened unit suffixes, ie GB, MB instead of total bytes
+'ls -lah' List in long format, includes directory contents that start with a dot (.). With shorterened unit suffixes
+'ls -t' Sorts by time modified
+'ls -Glp' Colored long output; writes a '/' after each output if it is a directory
+
 
 ---
 
@@ -42,7 +49,12 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 'ls -c' Displays files by file timestamp.
+    'ls -C'	Displays files in a columnar format (default)
+    'ls -R'	Displays subdirectories as well.
+    'ls -t'	Displays newest files first. (based on timestamp)
+    'ls -1'	Displays each entry on a line.
+
 
 ---
 
@@ -50,7 +62,10 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > The xargs utility reads space, tab, newline and end-of-file delimited
+     strings from the standard input and executes utility with the strings as
+     arguments.
 
- 
+     find temp/ "*.txt" -print0 | xargs -0 ls
 
+     finds and prints all .txt files within the temp director 
