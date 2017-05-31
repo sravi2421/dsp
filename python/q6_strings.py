@@ -18,6 +18,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
+    if count > 9:
+        return 'Number of donuts: many'
+    else:
+        return 'Number of donuts: {0}'.format(count)
     raise NotImplementedError
 
 
@@ -37,6 +41,11 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    if len(s)>1:
+        y = s[0:2]+s[len(s)-2] +s[len(s)-1]
+        return y
+    else:
+        return ''
     raise NotImplementedError
 
 
@@ -56,6 +65,13 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
+    str_copy = '' + s[0]
+    for n in range(1, len(s)):
+        if s[n]==s[0]:
+            str_copy = str_copy+'*'
+        else:
+            str_copy = str_copy + s[n]
+    return str_copy
     raise NotImplementedError
 
 
@@ -74,6 +90,13 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+    a_copy = "" + b[0] + b[1]
+    b_copy = "" + a[0] + a[1]
+    for n in range(2, len(a)):
+        a_copy = a_copy+a[n]
+    for n in range(2, len(b)):
+        b_copy = b_copy+b[n]
+    return (a_copy + " " + b_copy)
     raise NotImplementedError
 
 
@@ -91,6 +114,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
+    if len(s) > 2:
+        if s[(len(s)-3):(len(s))] == "ing":
+            return s + "ly"
+        else:
+            return s + "ing"
+    else:
+        return s
     raise NotImplementedError
 
 
@@ -111,6 +141,21 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    bad_index = -5
+    not_index = -5
+    for n in range(3, len(s)+1):
+        if s[(n-3):n] == "bad":
+            bad_index = n-3
+        elif s[(n-3):n] == "not":
+            not_index = n-3
+    if not_index < bad_index:
+        str_copy = ""
+        for n in range(not_index):
+            str_copy = str_copy + s[n]
+        return str_copy + "good"
+    else:
+        return s
+
     raise NotImplementedError
 
 
@@ -130,4 +175,14 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
+    str_copy = ""
+    for n in range (len(a)/2 + len(a)%2):
+        str_copy = str_copy + a[n]
+    for n in range (len(b)/2 + len(b)%2):
+        str_copy = str_copy + b[n]
+    for n in range (len(a)/2 + len(a)%2, len(a)):
+        str_copy = str_copy +a[n]
+    for n in range (len(b)/2 + len(b)%2, len(b)):
+        str_copy = str_copy + b[n]
+    return str_copy
     raise NotImplementedError

@@ -25,7 +25,7 @@ The name is derived from the term "Panel data", an econometrics term for multidi
 #### [Greg Reda (Intro to Pandas Data Structures)](http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/)  
 
 #### [Things in Pandas I Wish I Had Known Sooner](http://nbviewer.jupyter.org/github/rasbt/python_reference/blob/master/tutorials/things_in_pandas.ipynb?utm_source=Python+Weekly+Newsletter&utm_campaign=8416b188e6-Python_Weekly_Issue_176_January_29_2015&utm_medium=email&utm_term=0_9e26887fc5-8416b188e6-312716773#Selecting-NaN-Rows)
-    
+
 
 ---
 
@@ -34,7 +34,7 @@ The name is derived from the term "Panel data", an econometrics term for multidi
 >### Part 1:  Review Pandas Example
 Review the Jupyter Notebook [`1_pandas_jeopardy_example.ipynb`](python/pandas/1_pandas_jeopardy_example.ipynb) which uses the `jeopardy.csv` data.
 
->### Part 2:  Try Pandas 
+>### Part 2:  Try Pandas
 * Open the Jupyter Notebook [`2_pandas_olive_questions.ipynb`](python/pandas/2_pandas_olive_questions.ipynb) which uses the `olive.csv` data.
 * Make a copy of the notebook and name it `3_pandas_olive_answers_myname.ipynb`.  (Example:  my notebook would be called `3_pandas_olive_answers_reshama.ipynb`).
 * Update the header at the top by adding in your name and date.
