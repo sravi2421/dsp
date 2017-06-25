@@ -19,7 +19,16 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > pwd: print working directory
+mkdir: make directory
+cd: change directory
+ls: list directory contents, use -a to list hidden files
+rm: remove a file
+touch: creates a file
+cp: copies a file
+mv: moves a file, can also be used to rename a file
+nano: opens file within terminal
+
 
 ---
 
@@ -38,7 +47,7 @@ What do the following commands do:
 'ls -a', includes directory contents that start with a dot (.).
 'ls -l', List in long format (ie, lots of detail)
 'ls -lh' List in long format, with shortened unit suffixes, ie GB, MB instead of total bytes
-'ls -lah' List in long format, includes directory contents that start with a dot (.). With shorterened unit suffixes
+'ls -lah' List in long format, includes directory contents that start with a dot (.). With shortened unit suffixes
 'ls -t' Sorts by time modified
 'ls -Glp' Colored long output; writes a '/' after each output if it is a directory
 
@@ -68,4 +77,4 @@ What does `xargs` do? Give an example of how to use it.
 
      find temp/ "*.txt" -print0 | xargs -0 ls
 
-     finds and prints all .txt files within the temp director 
+     finds and prints all .txt files within the temp director
